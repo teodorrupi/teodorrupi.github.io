@@ -3,25 +3,11 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Trivago QA Interview Assignment</title>
-    <!-- <link rel="stylesheet" href="../styles/trivago/main_view.css"> -->
     <link rel="stylesheet" href="main_view.css">
     <link href="http://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Condensed">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:light,regular,medium,thin,italic,mediumitalic,bold" title="roboto">
-    <script type="text/javascript">
-        //This function changes the header text to trivago colors
-        document.getElementById("header").onmouseover = function() {setTrivagoColors()};
-        document.getElementById("container").onmouseover = function() {resetTrivagoColors()};
-        function setTrivagoColors(){
-            var x = document.getElementById("title").innerHTML;
-            document.getElementById("title").innerHTML = '<span style="color:#215e8b;">Junior</span>' +
-            '<span style="color:#dd732c;">&nbsp;Quality Assurance</span>' +
-            '<span style="color:#8b0c24;">&nbsp;Assignment</span>'
-        }
-        function resetTrivagoColors(){
-            document.getElementById("title").innerHTML = 'Junior Quality Assurance Assignment';
-        }
-    </script>
+
 </head>
 
 <body>
@@ -35,7 +21,30 @@
             </div>
         </div>
     </div>
+
+    <div id="navbar">
+        <div class="wrap" id="nav_wrap">
+            
+        </div>
+    </div>
+
     <div id="container"></div>
+
+    <script type="text/javascript">
+        document.getElementById("header").onmouseover = function() {setTrivagoColors()};
+        document.getElementById("container").onmouseover = function() {resetTrivagoColors()};
+
+        function setTrivagoColors(){
+            document.getElementById("title").innerHTML = '<span style="color:#215e8b;">Junior</span>' +
+            '<span style="color:#dd732c;">&nbsp;Quality Assurance</span>' +
+            '<span style="color:#8b0c24;">&nbsp;Assignment</span>';
+        }
+        function resetTrivagoColors(){
+            document.getElementById("title").innerHTML = 'Junior Quality Assurance Assignment';
+        }
+    </script>
+
+
 
 
 
