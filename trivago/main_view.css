@@ -1,16 +1,14 @@
 html{
     box-sizing: border-box;
-
 }
 
 html, body {
     font-size: 12px;
     height: 80%;
-
 }
 
 body{
-    margin: 20px;
+    margin-top: 20px;
     margin-right: 50px;
     margin-left: 50px;
     color: #444;
@@ -39,11 +37,7 @@ div {
     display: block;
 }
 
-#header{
-    display: table;
-}
-
-#header, #container{
+#header, #container, #nav{
 
     clear: both;
     max-width: 920px;
@@ -56,21 +50,39 @@ div {
     font-style: normal;
     vertical-align: baseline;
     box-sizing: inherit;
-    border-bottom: 1px solid #CCC;
 
 }
 
 #container{
 
     height: 60%;
+    border-bottom: 1px solid #CCC;
+}
+#header{
+    display: table;
+    border-bottom: 1px solid #CCC;
+
 }
 
-#logo_view, #title_view{
+#nav{
+    display: table;
+    margin-top: 10px;
+    vertical-align: middle;
+
+
+}
+
+#nav_list, #btn1, #btn2, #btn3, #btn4{
+
+}
+
+#logo_view, #title_view, li{
 
     display: table-cell;
     vertical-align: middle;
     padding-right: 20px;
     padding-left: 20px;
+
 }
 
 #logo_view{
@@ -97,8 +109,32 @@ a:active {
     text-decoration: none;
 }
 
+
+
 .wrap{
     max-width: 940px;
     height: 50px;
     position: relative;
+}
+
+ul {
+    list-style-type: none;
+    display: table;
+    margin: auto;
+
+}
+
+li {
+    margin: auto;
+    display: inline;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-family: 'Bree Serif', Georgia, serif;
+    font-style: normal;
+    font-size: 12px;
+
+}
+
+#btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover {
+    background-color: #F0F0F0 ;
 }

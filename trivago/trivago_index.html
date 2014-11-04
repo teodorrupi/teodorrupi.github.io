@@ -17,31 +17,49 @@
                 <img src="http://ie1.trivago.com/images/layoutimages/mars/logo_ci/logo@2x_.png" alt="TrivagoLogo" class="logo">
             </div>
             <div id="title_view">
-                <div id="title">Junior Quality Assurance Assignment</div>
+                <div id="title">Junior Quality <br>Assurance Assignment</div>
             </div>
         </div>
     </div>
 
-    <!--<div id="navbar">-->
-        <!--<div class="wrap" id="nav_wrap">-->
-            <!---->
-        <!--</div>-->
-    <!--</div>-->
+    <div id="nav">
+            <ul id="nav_list">
+                <li id="btn1" style="border-right: 1px solid #CCC;"><a href="#" onclick="q_solver(event)">Solution 1</a></li>
+                <li id="btn2" style="border-right: 1px solid #CCC;"><a href="#" onclick="q_solver(event)">Solution 2</a></li>
+                <li id="btn3" style="border-right: 1px solid #CCC;"><a href="#" onclick="q_solver(event)">Solution 3a</a></li>
+                <li id="btn4" ><a href="#" onclick="q_solver(event)">Solution 3b</a></li>
+            </ul>
+        </div>
+
+
 
     <div id="container"></div>
 
     <script type="text/javascript">
         document.getElementById("header").onmouseover = function() {setTrivagoColors()};
+        document.getElementById("nav").onmouseover = function() {setTrivagoColors()};
         document.getElementById("container").onmouseover = function() {resetTrivagoColors()};
 
         function setTrivagoColors(){
             document.getElementById("title").innerHTML = '<span style="color:#215e8b;">Junior</span>' +
-            '<span style="color:#dd732c;">&nbsp;Quality Assurance</span>' +
+            '<span style="color:#dd732c;">&nbsp;Quality <br>Assurance</span>' +
             '<span style="color:#8b0c24;">&nbsp;Assignment</span>';
         }
         function resetTrivagoColors(){
-            document.getElementById("title").innerHTML = 'Junior Quality Assurance Assignment';
+            document.getElementById("title").innerHTML = 'Junior Quality <br>Assurance Assignment';
         }
+    </script>
+
+    <script>
+
+        function q_solver(e){
+            var target = e.target;
+            document.getElementById("container").innerHTML = target.textContent || target.innerText;
+        }
+
+
+
+
     </script>
 
 
