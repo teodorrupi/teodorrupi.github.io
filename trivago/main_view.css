@@ -142,7 +142,7 @@ li {
     background-color: #F0F0F0 ;
 }
 
-#article, h3{
+#article, h3, #start{
     font-family: helvetica, arial, freesans, clean, sans-serif;
     font-size: 15px;
 
@@ -151,4 +151,9 @@ li {
 #end{
     float: right;
     font-size: 12px;
+}
+#start{
+    margin: auto;
+    font-size: 16px;
+    text-align:center;
 }

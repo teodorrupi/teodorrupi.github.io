@@ -24,28 +24,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="trivago_index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="trivago_index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/trivago_index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.692307" vertical-offset="765" max-vertical-offset="1785">
-              <caret line="69" column="33" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.7183099" vertical-offset="680" max-vertical-offset="1836">
+              <caret line="64" column="26" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
               <folding>
                 <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#2;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1415149612829" expanded="true" signature="5079:5093" placeholder="..." />
-                <marker date="1415149612829" expanded="true" signature="5138:5152" placeholder="..." />
-                <marker date="1415149612829" expanded="true" signature="5214:5228" placeholder="..." />
+                <marker date="1415151412293" expanded="true" signature="5185:5199" placeholder="..." />
+                <marker date="1415151412293" expanded="true" signature="5244:5258" placeholder="..." />
+                <marker date="1415151412293" expanded="true" signature="5320:5334" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_view.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main_view.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main_view.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.82828283" vertical-offset="1582" max-vertical-offset="2193">
-              <caret line="152" column="17" selection-start-line="152" selection-start-column="17" selection-end-line="152" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1667" max-vertical-offset="2278">
+              <caret line="157" column="22" selection-start-line="157" selection-start-column="22" selection-end-line="157" selection-end-column="22" />
               <folding>
                 <element signature="e#89#130#0" expanded="false" />
                 <element signature="e#136#225#0" expanded="false" />
@@ -187,7 +187,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -239,9 +239,9 @@
             <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#2;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1415149612829" expanded="true" signature="5079:5093" placeholder="..." />
-            <marker date="1415149612829" expanded="true" signature="5138:5152" placeholder="..." />
-            <marker date="1415149612829" expanded="true" signature="5214:5228" placeholder="..." />
+            <marker date="1415151412293" expanded="true" signature="5185:5199" placeholder="..." />
+            <marker date="1415151412293" expanded="true" signature="5244:5258" placeholder="..." />
+            <marker date="1415151412293" expanded="true" signature="5320:5334" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -273,9 +273,9 @@
             <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#2;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1415149612829" expanded="true" signature="5079:5093" placeholder="..." />
-            <marker date="1415149612829" expanded="true" signature="5138:5152" placeholder="..." />
-            <marker date="1415149612829" expanded="true" signature="5214:5228" placeholder="..." />
+            <marker date="1415151412293" expanded="true" signature="5185:5199" placeholder="..." />
+            <marker date="1415151412293" expanded="true" signature="5244:5258" placeholder="..." />
+            <marker date="1415151412293" expanded="true" signature="5320:5334" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -299,25 +299,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trivago_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.692307" vertical-offset="765" max-vertical-offset="1785">
-          <caret line="69" column="33" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#2;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1415149612829" expanded="true" signature="5079:5093" placeholder="..." />
-            <marker date="1415149612829" expanded="true" signature="5138:5152" placeholder="..." />
-            <marker date="1415149612829" expanded="true" signature="5214:5228" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main_view.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82828283" vertical-offset="1582" max-vertical-offset="2193">
-          <caret line="152" column="17" selection-start-line="152" selection-start-column="17" selection-end-line="152" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1667" max-vertical-offset="2278">
+          <caret line="157" column="22" selection-start-line="157" selection-start-column="22" selection-end-line="157" selection-end-column="22" />
           <folding>
             <element signature="e#89#130#0" expanded="false" />
             <element signature="e#136#225#0" expanded="false" />
@@ -329,6 +314,21 @@
             <element signature="e#1445#1495#0" expanded="false" />
             <element signature="e#1505#1555#0" expanded="false" />
             <element signature="e#1566#1616#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trivago_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7183099" vertical-offset="680" max-vertical-offset="1836">
+          <caret line="64" column="26" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#2;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1415151412293" expanded="true" signature="5185:5199" placeholder="..." />
+            <marker date="1415151412293" expanded="true" signature="5244:5258" placeholder="..." />
+            <marker date="1415151412293" expanded="true" signature="5320:5334" placeholder="..." />
           </folding>
         </state>
       </provider>
