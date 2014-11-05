@@ -1,5 +1,6 @@
 html{
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
 }
 
 html, body {
@@ -14,7 +15,7 @@ body{
     color: #444;
 }
 
-h1, h2, h3, .list, .title_view, #title{
+h1, h2, .list, .title_view, #title{
     font-family: 'Bree Serif', Georgia, serif;
     font-style: normal;
     font-size: 30px;
@@ -37,7 +38,7 @@ div {
     display: block;
 }
 
-#header, #container, #nav{
+#header, #container, #nav, #nav_list{
 
     clear: both;
     max-width: 920px;
@@ -54,9 +55,10 @@ div {
 }
 
 #container{
-
-    height: 60%;
+    margin-top: 20px;
     border-bottom: 1px solid #CCC;
+    font-family: helvetica, arial, freesans, clean, sans-serif;
+    overflow: auto;
 }
 #header{
     display: table;
@@ -67,6 +69,7 @@ div {
 #nav{
     display: table;
     margin-top: 10px;
+    margin-bottom: 10px;
     vertical-align: middle;
 
 
@@ -137,4 +140,15 @@ li {
 
 #btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover {
     background-color: #F0F0F0 ;
+}
+
+#article, h3{
+    font-family: helvetica, arial, freesans, clean, sans-serif;
+    font-size: 15px;
+
+}
+
+#end{
+    float: right;
+    font-size: 12px;
 }

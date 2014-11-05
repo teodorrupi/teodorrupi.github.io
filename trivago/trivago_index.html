@@ -7,7 +7,36 @@
     <link href="http://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Condensed">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:light,regular,medium,thin,italic,mediumitalic,bold" title="roboto">
-
+    <script>
+        function q_solver1(){
+            document.getElementById("article").innerHTML =
+                    '<p><b><h3>Question One Solution: Analyze</h3></b></p><b>Description: </b>Search "Dusseldorf, German" and "Hilden, Germany" on trivago.co.uk.' +
+                    '</br> Compare the search results and note any differences in terms of results and product behaviour' +
+                    '</br> What items are displayed? How are they arranged? Etc. Try to explain them.' +
+                    '</br> Then search for "Eiffel Tower". Is the search more similar to Hilden or Dusseldorf search?';
+        }
+        function q_solver2(){
+            document.getElementById("article").innerHTML =
+                    '<p><b><h3>Question Two Solution: Document</h3></b></p><b>Description: </b>Search "Dusseldorf, German" and "Hilden, Germany" on trivago.co.uk.' +
+                    '</br> Compare the search results and note any differences in terms of results and product behaviour' +
+                    '</br> What items are displayed? How are they arranged? Etc. Try to explain them.' +
+                    '</br> Then search for "Eiffel Tower". Is the search more similar to Hilden or Dusseldorf search?';
+        }
+        function q_solver3(){
+            document.getElementById("article").innerHTML =
+                    '<p><b><h3>Question ThreeA Solution: Analyze</h3></b></p><b>Description: </b>Search "Dusseldorf, German" and "Hilden, Germany" on trivago.co.uk.' +
+                    '</br> Compare the search results and note any differences in terms of results and product behaviour' +
+                    '</br> What items are displayed? How are they arranged? Etc. Try to explain them.' +
+                    '</br> Then search for "Eiffel Tower". Is the search more similar to Hilden or Dusseldorf search?';
+        }
+        function q_solver4(){
+            document.getElementById("article").innerHTML =
+                    '<p><b><h3>Question ThreeB Solution: Develop</h3></b></p><b>Description: </b>Search "Dusseldorf, German" and "Hilden, Germany" on trivago.co.uk.' +
+                    '</br> Compare the search results and note any differences in terms of results and product behaviour' +
+                    '</br> What items are displayed? How are they arranged? Etc. Try to explain them.' +
+                    '</br> Then search for "Eiffel Tower". Is the search more similar to Hilden or Dusseldorf search?';
+        }
+    </script>
 </head>
 
 <body>
@@ -17,23 +46,32 @@
                 <img src="http://ie1.trivago.com/images/layoutimages/mars/logo_ci/logo@2x_.png" alt="TrivagoLogo" class="logo">
             </div>
             <div id="title_view">
-                <div id="title">Junior Quality <br>Assurance Assignment</div>
+                <div id="title">Junior Quality Assurance Assignment</div>
             </div>
         </div>
     </div>
-
     <div id="nav">
-            <ul id="nav_list">
-                <li id="btn1" style="border-right: 1px solid #CCC;"><a href="#" onclick="q_solver(event)">Solution 1</a></li>
-                <li id="btn2" style="border-right: 1px solid #CCC;"><a href="#" onclick="q_solver(event)">Solution 2</a></li>
-                <li id="btn3" style="border-right: 1px solid #CCC;"><a href="#" onclick="q_solver(event)">Solution 3a</a></li>
-                <li id="btn4" ><a href="#" onclick="q_solver(event)">Solution 3b</a></li>
-            </ul>
+        <ul id="nav_list">
+            <li id="btn1" style="border-right: 1px solid #CCC;"><a href="#" onclick="q_solver1()">Solution 1</a></li>
+            <li id="btn2" style="border-right: 1px solid #CCC;"><a href="#" onclick="q_solver2()">Solution 2</a></li>
+            <li id="btn3" style="border-right: 1px solid #CCC;"><a href="#" onclick="q_solver3()">Solution 3a</a></li>
+            <li id="btn4" ><a href="#" onclick="q_solver4()">Solution 3b</a></li>
+        </ul>
+    </div>
+    <div id="container">
+        <div id="article">
+            <p><i>Dear visitor ...</i></p>
+            <p><i>This simple website was built solely for the purpose of representing the trivago company assignment solutions<br>
+            and will exist until it will be necessary unless taked down due to any law violations. The trivago company logo is used<br>
+            because this website will only be referenced by trivago company staff members.</i></p>
+            <div id="end">
+                <p><i>Quality Assurance Position Applicant<br>Teodor Rupi</i></p>
+                <p><i><b>Email: </b>teodorrupi at gmail dot com
+                <br><b>LinkedIn: </b>de.linkedin.com/in/teodorrupi/</i></p>
+            </div>
+
         </div>
-
-
-
-    <div id="container"></div>
+    </div>
 
     <script type="text/javascript">
         document.getElementById("header").onmouseover = function() {setTrivagoColors()};
@@ -42,25 +80,14 @@
 
         function setTrivagoColors(){
             document.getElementById("title").innerHTML = '<span style="color:#215e8b;">Junior</span>' +
-            '<span style="color:#dd732c;">&nbsp;Quality <br>Assurance</span>' +
+            '<span style="color:#dd732c;">&nbsp;Quality Assurance</span>' +
             '<span style="color:#8b0c24;">&nbsp;Assignment</span>';
         }
         function resetTrivagoColors(){
-            document.getElementById("title").innerHTML = 'Junior Quality <br>Assurance Assignment';
+            document.getElementById("title").innerHTML = 'Junior Quality Assurance Assignment';
         }
     </script>
 
-    <script>
-
-        function q_solver(e){
-            var target = e.target;
-            document.getElementById("container").innerHTML = target.textContent || target.innerText;
-        }
-
-
-
-
-    </script>
 
 
 
