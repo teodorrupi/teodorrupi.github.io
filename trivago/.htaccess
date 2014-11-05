@@ -1,4 +1,0 @@
-AuthName "Members Only"
-AuthType Basic
-AuthUserFile C:\Users\Teodor\Desktop\teodorrupi.github.io\.htpasswd
-require valid-user
