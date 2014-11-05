@@ -13,6 +13,7 @@ body{
     margin-right: 50px;
     margin-left: 50px;
     color: #444;
+    overflow: hidden;
 }
 
 h1, h2, .list, .title_view, #title{
@@ -73,9 +74,7 @@ div {
 
 
 }
-#footer{
-    margin-top: 10px;
-}
+
 
 #nav_list, #btn1, #btn2, #btn3, #btn4{
 
@@ -147,7 +146,6 @@ li {
 #article, h3, #start{
     font-family: helvetica, arial, freesans, clean, sans-serif;
     font-size: 15px;
-
 }
 
 h3{
@@ -170,6 +168,21 @@ p{
 }
 
 #home{
-
     padding-top: 30px;
 }
+
+#d1, #d2, #d3{
+
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+}
+
+#footer{
+     padding-top: 10px;
+     margin: auto;
+     vertical-align: middle;
+     align-content: center;
+
+
+ }
