@@ -1,6 +1,7 @@
 html{
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 html, body {
@@ -13,6 +14,7 @@ body{
     margin-right: 50px;
     margin-left: 50px;
     color: #444;
+    /*overflow: hidden; */
 }
 
 h1, h2, .list, .title_view, #title{
@@ -38,7 +40,7 @@ div {
     display: block;
 }
 
-#header, #container, #nav, #nav_list{
+#header, #container, #nav, #nav_list, #footer{
 
     clear: both;
     max-width: 920px;
@@ -65,7 +67,6 @@ div {
     border-bottom: 1px solid #CCC;
 
 }
-
 #nav{
     display: table;
     margin-top: 10px;
@@ -74,6 +75,7 @@ div {
 
 
 }
+
 
 #nav_list, #btn1, #btn2, #btn3, #btn4{
 
@@ -134,18 +136,22 @@ li {
     padding-left: 20px;
     font-family: 'Bree Serif', Georgia, serif;
     font-style: normal;
-    font-size: 12px;
+    font-size: 15px;
 
 }
 
-#btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover {
+#btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover, #btn5:hover {
     background-color: #F0F0F0 ;
 }
 
 #article, h3, #start{
     font-family: helvetica, arial, freesans, clean, sans-serif;
     font-size: 15px;
+}
 
+h3{
+    font-size: 20px;
+    padding-top: 40px;
 }
 
 #end{
@@ -157,3 +163,45 @@ li {
     font-size: 16px;
     text-align:center;
 }
+
+p{
+    line-height: 130%;
+}
+
+#home{
+    padding-top: 30px;
+}
+
+#d1, #d2, #d3{
+
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+}
+
+#footer{
+     padding-top: 10px;
+     margin: auto;
+     vertical-align: middle;
+     align-content: center;
+     height: 30px;
+
+
+ }
+#article{
+    font-family: arial,sans-serif; !important;
+    font-size: 14px;
+}
+
+#d4{
+    font-family: 'Bree Serif', Georgia, serif;
+    text-align: center;
+    font-size: 10px;
+    padding-bottom: 15px;
+}
+
+
+#inline_img{
+    display: inline-block;
+    align-content: center;
+     }

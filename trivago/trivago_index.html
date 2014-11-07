@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="full_view">
+<html class="full_view" xmlns="http://www.w3.org/1999/html">
 <head lang="en">
     <meta charset="UTF-8">
     <title>Trivago QA Interview Assignment</title>
@@ -7,39 +7,11 @@
     <link href="http://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Condensed">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:light,regular,medium,thin,italic,mediumitalic,bold" title="roboto">
-    <script>
-        function q_solver1(){
-            document.getElementById("article").innerHTML =
-                    '<p><b><h3>Question One Solution: Analyze</h3></b></p><b>Description: </b>Search "Dusseldorf, German" and "Hilden, Germany" on trivago.co.uk.' +
-                    '</br> Compare the search results and note any differences in terms of results and product behaviour' +
-                    '</br> What items are displayed? How are they arranged? Etc. Try to explain them.' +
-                    '</br> Then search for "Eiffel Tower". Is the search more similar to Hilden or Dusseldorf search?';
-        }
-        function q_solver2(){
-            document.getElementById("article").innerHTML =
-                    '<p><b><h3>Question Two Solution: Document</h3></b></p><b>Description: </b>Search "Dusseldorf, German" and "Hilden, Germany" on trivago.co.uk.' +
-                    '</br> Compare the search results and note any differences in terms of results and product behaviour' +
-                    '</br> What items are displayed? How are they arranged? Etc. Try to explain them.' +
-                    '</br> Then search for "Eiffel Tower". Is the search more similar to Hilden or Dusseldorf search?';
-        }
-        function q_solver3(){
-            document.getElementById("article").innerHTML =
-                    '<p><b><h3>Question ThreeA Solution: Analyze</h3></b></p><b>Description: </b>Search "Dusseldorf, German" and "Hilden, Germany" on trivago.co.uk.' +
-                    '</br> Compare the search results and note any differences in terms of results and product behaviour' +
-                    '</br> What items are displayed? How are they arranged? Etc. Try to explain them.' +
-                    '</br> Then search for "Eiffel Tower". Is the search more similar to Hilden or Dusseldorf search?';
-        }
-        function q_solver4(){
-            document.getElementById("article").innerHTML =
-                    '<p><b><h3>Question ThreeB Solution: Develop</h3></b></p><b>Description: </b>Search "Dusseldorf, German" and "Hilden, Germany" on trivago.co.uk.' +
-                    '</br> Compare the search results and note any differences in terms of results and product behaviour' +
-                    '</br> What items are displayed? How are they arranged? Etc. Try to explain them.' +
-                    '</br> Then search for "Eiffel Tower". Is the search more similar to Hilden or Dusseldorf search?';
-        }
-    </script>
+    <a name="top"></a>
 </head>
 
 <body>
+
     <div id="header">
         <div class="wrap" id="header_wrap">
             <div id="logo_view">
@@ -50,32 +22,44 @@
             </div>
         </div>
     </div>
+
     <div id="nav">
         <ul id="nav_list">
             <li id="btn1" style="border-right: 1px solid #CCC;"><a href="#" onclick="q_solver1()">Solution 1</a></li>
             <li id="btn2" style="border-right: 1px solid #CCC;"><a href="#" onclick="q_solver2()">Solution 2</a></li>
             <li id="btn3" style="border-right: 1px solid #CCC;"><a href="#" onclick="q_solver3()">Solution 3a</a></li>
-            <li id="btn4" ><a href="#" onclick="q_solver4()">Solution 3b</a></li>
+            <li id="btn4" style="border-right: 1px solid #CCC;"><a href="#" onclick="q_solver4()">Solution 3b</a></li>
+            <li id="btn5" ><a href="#" onclick="q_solver5()">Observations</a></li>
         </ul>
     </div>
     <div id="container">
         <div id="start">
-            <p><i>" In life, there is no going back ... "</i></p>
+            <p><i>"I'm so fast that last night I turned off the light switch in my hotel <br>room and was in bed before the room was dark!" - Muhammed Ali</i></p>
         </div>
         <div id="article">
-            <p><i>Dear visitor ...</i></p>
-            <p><i>This simple website was built solely for the purpose of representing the trivago company assignment solutions<br>
-            and will exist until it will be necessary unless taked down due to any law violations. The trivago company logo is used<br>
-            because this website will only be referenced by trivago company staff members.</i></p>
+            <p id="home">Dear visitor,</p>
+            <p>This simple website was built solely for the purpose of representing the trivago company assignment solutions<br>
+            and will exist until it will be necessary unless taken down due to any law violations. The trivago company logo is used<br>
+            because this website will only be referenced by trivago company staff members.</p>
             <div id="end">
-                <p><i>Quality Assurance Position Applicant<br>Teodor Rupi</i></p>
-                <p><i><b>Email: </b>teodorrupi at gmail dot com
-                <br><b>LinkedIn: </b>de.linkedin.com/in/teodorrupi/</i></p>
+                <p>Quality Assurance Position Applicant<br>Teodor Rupi</p>
+                <p><b>Email: </b>teodorrupi at gmail dot com
+                <br><b>LinkedIn: </b>de.linkedin.com/in/teodorrupi/</p>
             </div>
-
         </div>
     </div>
 
+    <div id="footer">
+        <a href="#top"><div id="d1" style="background-color: #2789c2;"></div>
+        <div id="d2" style="background-color: #dd732c;"></div>
+        <div id="d3" style=" background-color: #8b0c24;"></div></a>
+        <br>
+        <div id="d4">
+            Teodor Rupi (44&pi;) &copy; 2014 <br>version 0.9 beta
+        </div>
+    </div>
+
+    
     <script type="text/javascript">
         document.getElementById("header").onmouseover = function() {setTrivagoColors()};
         document.getElementById("nav").onmouseover = function() {setTrivagoColors()};
@@ -91,13 +75,114 @@
         }
     </script>
 
+    <script type="text/javascript">
+        function q_solver1 ()
+        {
+            document.getElementById("start").innerHTML = '<p><i>"In life, there is no going back ... " - Sir. Missing Home Button</p></i>';
+            document.getElementById("article").innerHTML =
+                    '<p><b><h3>Question One Solution: Analyze</h3></b>' +
+                    '</p><b>Description: </b>Search "Dusseldorf, German" and "Hilden, Germany" on trivago.co.uk.' +
+                    '</br> Compare the search results and note any differences in terms of results and product behaviour' +
+                    '</br> What items are displayed? How are they arranged? Etc. Try to explain them.' +
+                    '</br> Then search for "Eiffel Tower". Is the search more similar to Hilden or Dusseldorf search?' +
+                    '</br></br>' +
 
+                    '<p><b>Search observations: </b></p>' +
+                    '<p>While performing this task, to get a better understanding of the search mechanism I also tested the search with "Berlin, German", ' +
+                    '"Hamburg, German", "Bremen, German" and a few other queries. Doing this, I was able to understand most of the process and how the' +
+                    ' results are generated, which made me reach the conclusion that the search is not fully optimized on functioning on all search queries.<b>Please check Observations for further observations on the Search functionality.</b>' +
+                    '</br></br>Searching "Dusseldorf, German" and "Hilden, Germany"</br>Below you can see the search results suggestions.<div id="inline_img"><img style="width: 50%; height: 50%;" src="task_1_log_1.PNG">' +
+                    '<img style="width: 50%; height: 50%;" src="task_1_log_2.PNG"></div>' +
+                    '<b>(1)</b> The way search suggestions are organised is: Geographical locations(Country, City or State), City Regions(Mitte, Aeroport, etc) and Hotels. ' +
+                    '</br><b>(2)</b> The geographical locations are shown sorted alphabetically. Dusseldorf comes before Germany comes before Hilden.' +
+                    '</br><b>(3)</b> Pressing search after inputing the queries, :Dusseldorf, German: will result in a search for Dusseldorf and :Hilden, Germany: will result in' +
+                    ' a search for Germany unless second suggestion is selected.' +
+                    '</br><b>(4)</b> Dusseldorf results page features a Hotel Test widget which is not found in a few other result pages, but on main cities only.</p>' +
+                    '</br>' +
+                    '<p><b>Display and Arrangement: </b></p>' +
+                    '<p>The results page is divided in 5 parts. The header containing the search bar, the footer at the end containing links to other trivago sites, ' +
+                    'and the body of the site is divided in 3 parts. From left to right: The filters panel, the hotel results objects encapulate info on offers, map, feedback and a few more statistics,' +
+                    'and the history and favorites panel. <b>Please check Observations for further observations on the history panel.</b></p>' +
+                    '</br>' +
+                    '<p><b>Eiffel Tower: </b></p>' +
+                    '<p>Being very careful to the results, we can see that searching for the Eiffel Tower will follow the same pattern as Hilden from the point of view' +
+                    'that the results are sorted by distance and not popularity as in the case of Dusseldorf.</p>';
+        }
 
+        function q_solver2()
+        {
+            document.getElementById("start").innerHTML = '<p><i>"In life, there is no going back ... " - Sir. Missing Home Button</p></i>';
+            document.getElementById("article").innerHTML =
+                    '<p><b><h3>Question Two Solution: Document</h3></b></p><b>Description: </b>Search "Dusseldorf, German" and "Hilden, Germany" on trivago.co.uk.' +
+                    '</br> Compare the search results and note any differences in terms of results and product behaviour' +
+                    '</br> What items are displayed? How are they arranged? Etc. Try to explain them.' +
+                    '</br> Then search for "Eiffel Tower". Is the search more similar to Hilden or Dusseldorf search?';
+        }
 
+        function q_solver3()
+        {
+            document.getElementById("start").innerHTML = '<p><i>"In life, there is no going back ... " - Sir. Missing Home Button</p></i>';
+            document.getElementById("article").innerHTML =
+                    '<p><b><h3>Question ThreeA Solution: Analyze</h3></b>' +
+                    '</p><b>Description: </b>Take a look at the website source code and find the technologies used' +
+                    '</br> What happens when you execute a regular search?' +
+                    '</br> What happens when you filter or open a hotels details slide-out?' +
+                    '</br> How is the data formated?' +
+                    '</br></br>' +
 
+                    '<p><b>Technologies detected: </b>The list below contains the technologies I have found to be used on trivago web service.<br>' +
+                    'On the left-side is the name, on the right is some explanation or evidence.</p>' +
+                    '<p>Amazon A9 OpenSearch - profile="http://a9.com/-/spec/opensearch/1.1/"<br>' +
+                    'JavaScript - Redundant<br>HTML - Redundant<br>JSON-LD - type="application/ld+json"<br>Schema.org HTML Markups - Data structuring and better page recognision by search providers<br>' +
+                    'PHP - A must for the server side. Also www.trivago.com/page_check.php<br>Backbone.js framework- (function(){var v=this;var C=v.Backbone ...<br>Apache - On web server<br>' +
+                    'JSON - Redundant<br>JQuery library - To ease js code writing ALSO {throw new Error("jQuery requires...<br>CSS - Redundant<br>MapCSS - CSS for maps<br>' +
+                    'Ajax - ajaxComplete and ajaxSend Events on Event Listeners<br>Require.js framework - var requirejs,require,define;<br>Node.js - Assumption/Good idea to use on such website<br></p>' +
+                    '<br>'+
+                    '<p><b>Executing a regular search: </b>The Search is explained on the upper level and code level.</p>' +
+                    '<p>JavaScript - Redundant<br>HTML - Redundant<br>JSON-LD - type="application/ld+json"<br>Schema.org HTML Markups - Data structuring and better page recognision by search providers<br>' +
+                    'PHP - A must for the server side. Also www.trivago.com/page_check.php<br>Backbone.js framework- (function(){var v=this;var C=v.Backbone ...<br>Apache - On web server<br>' +
+                    'JSON - Redundant<br>JQuery library - To ease js code writing ALSO {throw new Error("jQuery requires...<br>CSS - Redundant<br>MapCSS - CSS for maps<br>' +
+                    'Ajax - ajaxComplete and ajaxSend Events on Event Listeners<br>Require.js framework - var requirejs,require,define;<br>Node.js - Assumption/Good idea to use on such website<br></p>' +
+                    '<br>'+
+                    '<p><b>Filtering or opening a hotels details: </b></p>' +
+                    '<p>JavaScript - Redundant<br>HTML - Redundant<br>JSON-LD - type="application/ld+json"<br>Schema.org HTML Markups - Data structuring and better page recognision by search providers<br>' +
+                    'PHP - A must for the server side. Also www.trivago.com/page_check.php<br>Backbone.js framework- (function(){var v=this;var C=v.Backbone ...<br>Apache - On web server<br>' +
+                    'JSON - Redundant<br>JQuery library - To ease js code writing ALSO {throw new Error("jQuery requires...<br>CSS - Redundant<br>MapCSS - CSS for maps<br>' +
+                    'Ajax - ajaxComplete and ajaxSend Events on Event Listeners<br>Require.js framework - var requirejs,require,define;<br>Node.js - Assumption/Good idea to use on such website<br></p>' +
+                    '<br>'+
+                    '<p><b>Data formatting: </b></p>' +
+                    '<p>JavaScript - Redundant<br>HTML - Redundant<br>JSON-LD - type="application/ld+json"<br>Schema.org HTML Markups - Data structuring and better page recognision by search providers<br>' +
+                    'PHP - A must for the server side. Also www.trivago.com/page_check.php<br>Backbone.js framework- (function(){var v=this;var C=v.Backbone ...<br>Apache - On web server<br>' +
+                    'JSON - Redundant<br>JQuery library - To ease js code writing ALSO {throw new Error("jQuery requires...<br>CSS - Redundant<br>MapCSS - CSS for maps<br>' +
+                    'Ajax - ajaxComplete and ajaxSend Events on Event Listeners<br>Require.js framework - var requirejs,require,define;<br>Node.js - Assumption/Good idea to use on such website<br></p>' +
+                    '<br>'+
+                    '<p><b>Notes: </b></p>' +
+                    '<p>JavaScript - Redundant<br>HTML - Redundant<br>JSON-LD - type="application/ld+json"<br>Schema.org HTML Markups - Data structuring and better page recognision by search providers<br>' +
+                    'PHP - A must for the server side. Also www.trivago.com/page_check.php<br>Backbone.js framework- (function(){var v=this;var C=v.Backbone ...<br>Apache - On web server<br>' +
+                    'JSON - Redundant<br>JQuery library - To ease js code writing ALSO {throw new Error("jQuery requires...<br>CSS - Redundant<br>MapCSS - CSS for maps<br>' +
+                    'Ajax - ajaxComplete and ajaxSend Events on Event Listeners<br>Require.js framework - var requirejs,require,define;<br>Node.js - Assumption/Good idea to use on such website<br></p>';
 
+        }
 
+        function q_solver4()
+        {
+            document.getElementById("start").innerHTML = '<p><i>"In life, there is no going back ... " - Sir. Missing Home Button</p></i>';
+            document.getElementById("article").innerHTML =
+                    '<p><b><h3>Question ThreeB Solution: Develop</h3></b></p><b>Description: </b>Search "Dusseldorf, German" and "Hilden, Germany" on trivago.co.uk.' +
+                    '</br> Compare the search results and note any differences in terms of results and product behaviour' +
+                    '</br> What items are displayed? How are they arranged? Etc. Try to explain them.' +
+                    '</br> Then search for "Eiffel Tower". Is the search more similar to Hilden or Dusseldorf search?';
+        }
 
-
+        function q_solver5()
+        {
+            document.getElementById("start").innerHTML = '<p><i>"In life, there is no going back ... " - Sir. Missing Home Button</p></i>';
+            document.getElementById("article").innerHTML =
+                    '<p><b><h3>Question ThreeB Solution: Develop</h3></b></p><b>Description: </b>Search "Dusseldorf, German" and "Hilden, Germany" on trivago.co.uk.' +
+                    '</br> Compare the search results and note any differences in terms of results and product behaviour' +
+                    '</br> What items are displayed? How are they arranged? Etc. Try to explain them.' +
+                    '</br> Then search for "Eiffel Tower". Is the search more similar to Hilden or Dusseldorf search?';
+        }
+    </script>
 </body>
 </html>
