@@ -128,10 +128,74 @@
         {
             document.getElementById("start").innerHTML = '<p><i>"In life, there is no going back ... " - Sir. Missing Home Button</p></i>';
             document.getElementById("article").innerHTML =
-                    '<p><b><h3>Question Two Solution: Document</h3></b></p><b>Description: </b>Search "Dusseldorf, German" and "Hilden, Germany" on trivago.co.uk.' +
-                    '</br> Compare the search results and note any differences in terms of results and product behaviour' +
-                    '</br> What items are displayed? How are they arranged? Etc. Try to explain them.' +
-                    '</br> Then search for "Eiffel Tower". Is the search more similar to Hilden or Dusseldorf search?';
+                    '<p><b><h3>Question Two Solution: Document</h3></b></p><b>Description: </b>Have a general look at the functionalities of the website and define some requirements' +
+                    '</br> Prioritize them on a scale 1 low to 5 urgent priority.' +
+                    '</br> Choose 3 of these requirements and create simple test cases and formulate a short Test Plan.' +
+                    '<br><br>' +
+                    '<p><b>Functional requirements:</b></p>' +
+                    '<p>The functional requirements below are based on functions already built on the website.<br>' +
+                    '<b>(a)</b> The search bar shall generate suggestions instantly on text input.[4]' +
+                    '<br><b>(b)</b> The website shall allow visitors to choose Check-in/Check-out dates. [5]' +
+                    '<br><b>(c)</b> The website shall allow visitors to choose room type (single/double etc..). [5]' +
+                    '<br><b>(d)</b> The website should provide visitors with different sortings of the results.[4]' +
+                    '<br><b>(e)</b> The website should provide visitors with a sign-in feature to save favorites/results.[3]' +
+                    '<br><b>(f)</b> The website should implement filtering options such as Price range, Distance from, hotel size, in-house options [5]' +
+                    '<br><b>(g)</b> The website should implement a search history panel [2]' +
+                    '<br><b>(h)</b> On results, the website must provide on first glance Photos, Prices, Review Feedbacks and basic info such as "Location", "Other prices list", "distance" [5]' +
+                    '<br><b>(i)</b> The results shall continue in the next pages if page-limit is exceeded.[3]' +
+                    '' +
+                    '<br><br>Having in mind that trivago offers a website with the purpose of hotel search for fast booking,' +
+                    '<br> I would rank (b), (c), (f) and (h) with priority <b>5</b>' +
+                    '<br> (a), (d) with priority <b>4</b>' +
+                    '<br> (i), (e) with priority <b>3</b>' +
+                    '<br> (g) with priority <b>2</b>' +
+                    '<br> and none of the functionalities with the priority <b>1</b></p>' +
+                    '<br>' +
+                    '<p><b>Test cases and Test Plan</b></p>' +
+                    '<p>Below I will present the test plan format with the test cases and procedures to follow in the same way this process is handled in industrial projects:<br>' +
+                    '<br><b>Test Plan</b>' +
+                    '<br> Type: Unit Test Plan (Since we are dealing with chunks of functionality)' +
+                    '<br> ID: TP_001' +
+                    '<br> Introduction: This test plan will focus on testing the requirements (a), (d), (g). Testing method chosen is Black Box testing, where the test does not approach the lower' +
+                    'levels of the application but only knows what it expects and validates the results of some input to the expected behaviour. ' +
+                    '<br> Test Items: trivago.com website' +
+                    '<br> Features to be tested: Following from functional requirements: (a), (d), (g)' +
+                    '<br> Approach: ' +
+                    '<br> Testing (a): Test the functionality of the search bar by using several inputs and checking the resulting suggestions, with Correct/Half-Correct/Incorrect inputs.' +
+                    '<br> Testing (d): Test this functionality by inputing several search queries and sorting each results page by Popularity/Distance/ etc.. and check if the sorting worked as expected.' +
+                    '<br> Testing (g): Test functionality by using several inputs and checking if the history panel has all those searches recorded as history. Refresh page to see if the history is saved as cookies/cache.' +
+                    '<br>' +
+                    '<br> <b>Test Cases:</b><br>' +
+                    '<br> T_C (a): ' +
+                    '<br> Test procedure: ' +
+                    '<br> Browse to www.trivago.com;' +
+                    '<br> Enter input by typing;' +
+                    '<br> Observe the suggestions drop down;' +
+                    '<br> Test data:' +
+                    '<br> -"Dusseldorf, German", -"Bremen, German", -"Berlin, German", -"Hamburg, German", -"Frankfurt, German", -"Hilden, German",' +
+                    '<br> -"Dusseldorf, Germany", -"Bremen, Germany", -"Berlin, Germany", -"Hamburg, Germany", -"Frankfurt, Germany", -"Hilden, Germany"' +
+                    '<br> Expected Results:' +
+                    '<br> For every input, the city name and Germany must come as suggestions in the beginning, interchangable depending on alphabetic order.' +
+                    '<br>' +
+                    '<br> T_C (d): ' +
+                    '<br> Test procedure: ' +
+                    '<br> Browse to www.trivago.com;' +
+                    '<br> Search with any correct input;' +
+                    '<br> Sort the results by Popularity / Rating / Price / Distance;' +
+                    '<br> Test data:' +
+                    '<br> -"Dusseldorf", -"Bremen", -"Germany", -"Eiffel Tower"'+
+                    '<br> Expected Results:' +
+                    '<br> Every sorting should produce best to worst results wich means Cheaper>Expensive, Popular>Unpopular and so on. Observe for any entry not sorted well.' +
+                    '<br>' +
+                    '<br> T_C (g): ' +
+                    '<br> Test procedure: ' +
+                    '<br> Browse to www.trivago.co.uk;' +
+                    '<br> Enter input and search;' +
+                    '<br> Observe the history panel on the right side;' +
+                    '<br> Test data:' +
+                    '<br> -"Dusseldorf", -"Bremen", -"Germany", -"Eiffel Tower"' +
+                    '<br> Expected Results:' +
+                    '<br> Dusseldorf, Bremen, Germany, Eiffel Tower in the given orded and nothing else should be in the history panel.</p>';
         }
 
         function q_solver3()
@@ -154,7 +218,7 @@
                     'Ajax - ajaxComplete and ajaxSend Events on Event Listeners<br>Require.js framework - var requirejs,require,define;<br>Node.js - Assumption/Good idea to use on such website<br></p>' +
                     '<br>'+
                     '<p><b>Executing a regular search: </b>The Search is explained on the upper level and code level.</p>' +
-                    '<p>On the upper level of the applicaiton, what the user can see as interaction is that based on his input, characters or words are matched to the database to show' +
+                    '<p>On the upper level of the application, what the user can see as interaction is that based on his input, characters or words are matched to the database to show' +
                     'suggestions drop-down panel. This basically ensures that the user can find what he needs else the location or the name is wrong or not in the database if it does not' +
                     'show up on the suggestions list.</br>On the lower level is what input on the search bar triggers below the interface.' +
                     '</br><b>(1)</b> ' +
@@ -198,14 +262,41 @@
         {
             document.getElementById("start").innerHTML = '<p><i>"In life, there is no going back ... " - Sir. Missing Home Button</p></i>';
             document.getElementById("article").innerHTML =
-                    '<p><b><h3>Question ThreeB Solution: Develop</h3></b></p><b>Description: </b>Search "Dusseldorf, German" and "Hilden, Germany" on trivago.co.uk.' +
-                    '</br> Compare the search results and note any differences in terms of results and product behaviour' +
-                    '</br> What items are displayed? How are they arranged? Etc. Try to explain them.' +
-                    '</br> Then search for "Eiffel Tower". Is the search more similar to Hilden or Dusseldorf search?';
+                    '<p><b><h3>Personal Observations and Notes</h3></b></p><b>Description: </b>Here are a few observations on the website while I was solving the assignment:' +
+                    '<br>' +
+                    '<p><b>History Panel</b></p>' +
+                    '<p>Going to trivago.com, searching Dusseldorf, Bremen, Germany and Eiffel Tower. Search history shows Las Vegas as part of the history queue. I have seen' +
+                    'that is is in all the different sites, where the capital or in this case a major turistic city is included in the search. In the beginning it looked intentional' +
+                    'but than I reached to the conclusion that the city or place is added because thats the default search text on trivago start site and by that means that this is actually a ' +
+                    'bug in the website, in my opinion.</p>' +
+                    '<br>' +
+                    '<p><b>Search Mechanism</b></p>' +
+                    '<p>Searching "Dusseldorf, German" or "Bremen, German" will give the city as a suggestion and Germany. Searching "Berlin, German" or "Hamburg, German" will' +
+                    'not result in either the city or Germany as a suggestion. This happens because Dusseldorf and Bremen are registered in the database as:<br> Bremen Bremen(state), Germany <br>' +
+                    'Dusseldorf North Rhine-Westphalia, Germany<br> and Berlin or Hamburg are registered as:<br>Hamburg Germany<br>Berlin Germany<br>As we can see the 2 last queries will not work only because' +
+                    'there is no comma (,) in the database naming such as regex [name, germany]. From this problem, I would say that the search needs a few optimizations.</p>' +
+                    '<br>' +
+                    '<p><b>Offers Place Holder</b></p>' +
+                    '<p>Going to trivago.com, searching Dusseldorf, Bremen, Germany and Eiffel Tower. Search history shows Las Vegas as part of the history queue. I have seen' +
+                    'that is is in all the different sites, where the capital or in this case a major turistic city is included in the search. In the beginning it looked intentional' +
+                    'but than I reached to the conclusion that the city or place is added because thats the default search text on trivago start site and by that means that this is actually a ' +
+                    'bug in the website, in my opinion.</p>' +
+                    '<br>' +
+                    '<p><b>Search Mechanism</b></p>' +
+                    '<p>Going to trivago.com, searching Dusseldorf, Bremen, Germany and Eiffel Tower. Search history shows Las Vegas as part of the history queue. I have seen' +
+                    'that is is in all the different sites, where the capital or in this case a major turistic city is included in the search. In the beginning it looked intentional' +
+                    'but than I reached to the conclusion that the city or place is added because thats the default search text on trivago start site and by that means that this is actually a ' +
+                    'bug in the website, in my opinion.</p>' +
+                    '<br>' +
+                    '<p><b>Search Mechanism</b></p>' +
+                    '<p>Going to trivago.com, searching Dusseldorf, Bremen, Germany and Eiffel Tower. Search history shows Las Vegas as part of the history queue. I have seen' +
+                    'that is is in all the different sites, where the capital or in this case a major turistic city is included in the search. In the beginning it looked intentional' +
+                    'but than I reached to the conclusion that the city or place is added because thats the default search text on trivago start site and by that means that this is actually a ' +
+                    'bug in the website, in my opinion.</p>';
         }
     </script>
 
-    <script>
+    <script type="text/javascript">
         $('#anchor1').click(function(){
             $('html, body').animate({
                 scrollTop: $( $(this).attr('href') ).offset().top
