@@ -19,7 +19,7 @@ body{
 h1, h2, h3, .list, .title_view, #title{
     font-family: 'Bree Serif', Georgia, serif;
     font-style: normal;
-    font-size: 30px;
+    font-size: 15px;
 }
 
 .logo{
