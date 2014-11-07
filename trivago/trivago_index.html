@@ -2,12 +2,21 @@
 <html class="full_view" xmlns="http://www.w3.org/1999/html">
 <head lang="en">
     <meta charset="UTF-8">
+    <!--
+        Want to get paid to dissect our code?
+        We're hiring developers: www.trivago.com/jobs
+
+        I would be thrilled to be part of the community of developers who built Trivago.
+        Here is my application assignment.
+        Please let me know if my skills fit the person you are looking for.
+    -->
     <title>Trivago QA Interview Assignment</title>
     <link rel="stylesheet" href="main_view.css">
     <link href="http://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Condensed">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:light,regular,medium,thin,italic,mediumitalic,bold" title="roboto">
-    <a name="top"></a>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <a name="myAnchor" id="myAnchor"></a>
 </head>
 
 <body>
@@ -50,7 +59,8 @@
     </div>
 
     <div id="footer">
-        <a href="#top"><div id="d1" style="background-color: #2789c2;"></div>
+        <a href="#myAnchor" rel="" id="anchor1" class="anchorLink">
+        <div id="d1" style="background-color: #2789c2;"></div>
         <div id="d2" style="background-color: #dd732c;"></div>
         <div id="d3" style=" background-color: #8b0c24;"></div></a>
         <br>
@@ -144,10 +154,15 @@
                     'Ajax - ajaxComplete and ajaxSend Events on Event Listeners<br>Require.js framework - var requirejs,require,define;<br>Node.js - Assumption/Good idea to use on such website<br></p>' +
                     '<br>'+
                     '<p><b>Executing a regular search: </b>The Search is explained on the upper level and code level.</p>' +
-                    '<p>JavaScript - Redundant<br>HTML - Redundant<br>JSON-LD - type="application/ld+json"<br>Schema.org HTML Markups - Data structuring and better page recognision by search providers<br>' +
-                    'PHP - A must for the server side. Also www.trivago.com/page_check.php<br>Backbone.js framework- (function(){var v=this;var C=v.Backbone ...<br>Apache - On web server<br>' +
-                    'JSON - Redundant<br>JQuery library - To ease js code writing ALSO {throw new Error("jQuery requires...<br>CSS - Redundant<br>MapCSS - CSS for maps<br>' +
-                    'Ajax - ajaxComplete and ajaxSend Events on Event Listeners<br>Require.js framework - var requirejs,require,define;<br>Node.js - Assumption/Good idea to use on such website<br></p>' +
+                    '<p>On the upper level of the applicaiton, what the user can see as interaction is that based on his input, characters or words are matched to the database to show' +
+                    'suggestions drop-down panel. This basically ensures that the user can find what he needs else the location or the name is wrong or not in the database if it does not' +
+                    'show up on the suggestions list.</br>On the lower level is what input on the search bar triggers below the interface.' +
+                    '</br><b>(1)</b> ' +
+                    '</br><b>(2)</b> ' +
+                    '</br><b>(3)</b> ' +
+                    '</br><b>(4)</b> ' +
+                    '</br><b>(5)</b> ' +
+                    '</br><b>(6)</b> </p>' +
                     '<br>'+
                     '<p><b>Filtering or opening a hotels details: </b></p>' +
                     '<p>JavaScript - Redundant<br>HTML - Redundant<br>JSON-LD - type="application/ld+json"<br>Schema.org HTML Markups - Data structuring and better page recognision by search providers<br>' +
@@ -189,5 +204,18 @@
                     '</br> Then search for "Eiffel Tower". Is the search more similar to Hilden or Dusseldorf search?';
         }
     </script>
+
+    <script>
+        $('#anchor1').click(function(){
+            $('html, body').animate({
+                scrollTop: $( $(this).attr('href') ).offset().top
+            }, 500);
+            return false;
+        });
+
+    </script>
+
+
+
 </body>
 </html>
