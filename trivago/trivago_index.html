@@ -239,23 +239,63 @@
                     'PHP - A must for the server side. Also www.trivago.com/page_check.php<br>Backbone.js framework- (function(){var v=this;var C=v.Backbone ...<br>Apache - On web server<br>' +
                     'JSON - Redundant<br>JQuery library - To ease js code writing ALSO {throw new Error("jQuery requires...<br>CSS - Redundant<br>MapCSS - CSS for maps<br>' +
                     'Ajax - ajaxComplete and ajaxSend Events on Event Listeners<br>Require.js framework - var requirejs,require,define;<br>Node.js - Assumption/Good idea to use on such website<br></p>' +
-                    '<br>'+
-                    '<p><b>Notes: </b></p>' +
-                    '<p>JavaScript - Redundant<br>HTML - Redundant<br>JSON-LD - type="application/ld+json"<br>Schema.org HTML Markups - Data structuring and better page recognision by search providers<br>' +
-                    'PHP - A must for the server side. Also www.trivago.com/page_check.php<br>Backbone.js framework- (function(){var v=this;var C=v.Backbone ...<br>Apache - On web server<br>' +
-                    'JSON - Redundant<br>JQuery library - To ease js code writing ALSO {throw new Error("jQuery requires...<br>CSS - Redundant<br>MapCSS - CSS for maps<br>' +
-                    'Ajax - ajaxComplete and ajaxSend Events on Event Listeners<br>Require.js framework - var requirejs,require,define;<br>Node.js - Assumption/Good idea to use on such website<br></p>';
-
+                    '<br>';
         }
 
         function q_solver4()
         {
             document.getElementById("start").innerHTML = '<p><i>"In life, there is no going back ... " - Sir. Missing Home Button</p></i>';
             document.getElementById("article").innerHTML =
-                    '<p><b><h3>Question ThreeB Solution: Develop</h3></b></p><b>Description: </b>Search "Dusseldorf, German" and "Hilden, Germany" on trivago.co.uk.' +
-                    '</br> Compare the search results and note any differences in terms of results and product behaviour' +
-                    '</br> What items are displayed? How are they arranged? Etc. Try to explain them.' +
-                    '</br> Then search for "Eiffel Tower". Is the search more similar to Hilden or Dusseldorf search?';
+                    '<p><b><h3>Question ThreeB Solution: Develop</h3></b></p><b>Description: </b>Chose a test case from Task 2, investigate the posibility to automate the case' +
+                    'and provide a solution in either a testing framework or in pseudo code.</p>' +
+                    '<br>' +
+                    '<p><b>(g)The website should implement a search history panel</b>' +
+                    '<br><br>' +
+                    '<b>Pseudocode:</b>' +
+                    '<br>' +
+                    'input_list = {Dusseldorf, Hamburg, Bremen, Berlin, Frankfurt}<br>' +
+                    'for x in input_list:<br>' +
+                    '&nbsp;&nbsp; search_field.input = x;<br>' +
+                    '&nbsp;&nbsp; doSearch();<br>' +
+                    'for x in history_list:<br>' +
+                    '&nbsp;&nbsp; if x in input_list:<br>' +
+                    '&nbsp;&nbsp;&nbsp;&nbsp;pass;<br>' +
+                    '&nbsp;&nbsp; else:<br>' +
+                    '&nbsp;&nbsp;&nbsp;&nbsp;return Failed<br>' +
+                    'return Passed<br><br>' +
+                    '' +
+                    'The code above is a very high level description of the testing that would take place to test the history saved after the searches.' +
+                    'and this test is only testing if after all the searches, the history is working correctly. An additional test would also be to test the history' +
+                    'after every input.<br><br>' +
+                    '<b>Pure JavaScript function:</b><br>' +
+                    'function test_history{<br>'+
+                    '&nbsp;&nbsp;var inputs = ["Dusseldorf", "Berlin", "Bremen", "Hamburg"];<br>'+
+                    '&nbsp;&nbsp;var i;<br>'+
+                    '&nbsp;&nbsp;for (i=0; i < inputs.length(); i++){<br>'+
+                    '&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("#js_querystring").value = inputs[i];<br>'+
+                    '&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("#js_go").click();<br>'+
+                    '&nbsp;&nbsp;}<br>'+
+                    'var history_list = document.getElementsByClassName("path visitable");<br>'+
+                    'if history_list.length() != inputs.length(){<br>'+
+                    '&nbsp;&nbsp;alert("Test Failed!");<br>'+
+                    '&nbsp;&nbsp;return false;<br>'+
+                    '}<br>'+
+                    'for (var x = 0; x<history_list.length(), x++){<br>'+
+                    '&nbsp;&nbsp;if history_list[x].value.indexOf(inputs[x]) > -1{<br>'+
+                    '&nbsp;&nbsp;&nbsp;&nbsp; pass;<br>'+
+                    '&nbsp;&nbsp;}<br>'+
+                    '&nbsp;&nbsp;else{<br>'+
+                    '&nbsp;&nbsp;&nbsp;&nbsp;alert("Test Failed!");<br>' +
+                    '&nbsp;&nbsp;&nbsp;&nbsp;return false;<br>'+
+                    '&nbsp;&nbsp;}<br>'+
+                    '}<br>'+
+                    'alert("Test Passed!");<br>'+
+                    'return true;<br>'+
+                    '}<br>' +
+                    '<br><br>' +
+                    '<b>Selenium Code with Java</b><br>' +
+                    'Even though I am not experienced in Selenium, here is my approach using Java with the help of  http://docs.seleniumhq.org/docs/.<br>' +
+                    '</p>';
         }
 
         function q_solver5()
