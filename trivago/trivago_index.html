@@ -280,8 +280,9 @@
                     '&nbsp;&nbsp;alert("Test Failed!");<br>'+
                     '&nbsp;&nbsp;return false;<br>'+
                     '}<br>'+
-                    'for (var x = 0; x < history_list.length(), x++){<br>'+
-                    '&nbsp;&nbsp;if history_list[x].value.indexOf(inputs[x]) > -1{<br>'+
+                    'for (var x = 0; x < history_list.length(), x++){<br>' +
+                    'len = history_list.length()<br>'+
+                    '&nbsp;&nbsp;if history_list[len-1-x].value.indexOf(inputs[x]) > -1{<br>'+
                     '&nbsp;&nbsp;&nbsp;&nbsp; pass;<br>'+
                     '&nbsp;&nbsp;}<br>'+
                     '&nbsp;&nbsp;else{<br>'+
@@ -317,22 +318,11 @@
                     'there is no comma (,) in the database naming such as regex [name, germany]. From this problem, I would say that the search needs a few optimizations.</p>' +
                     '<br>' +
                     '<p><b>Offers Place Holder</b></p>' +
-                    '<p>Going to trivago.com, searching Dusseldorf, Bremen, Germany and Eiffel Tower. Search history shows Las Vegas as part of the history queue. I have seen' +
-                    'that is is in all the different sites, where the capital or in this case a major turistic city is included in the search. In the beginning it looked intentional' +
-                    'but than I reached to the conclusion that the city or place is added because thats the default search text on trivago start site and by that means that this is actually a ' +
-                    'bug in the website, in my opinion.</p>' +
-                    '<br>' +
-                    '<p><b>Search Mechanism</b></p>' +
-                    '<p>Going to trivago.com, searching Dusseldorf, Bremen, Germany and Eiffel Tower. Search history shows Las Vegas as part of the history queue. I have seen' +
-                    'that is is in all the different sites, where the capital or in this case a major turistic city is included in the search. In the beginning it looked intentional' +
-                    'but than I reached to the conclusion that the city or place is added because thats the default search text on trivago start site and by that means that this is actually a ' +
-                    'bug in the website, in my opinion.</p>' +
-                    '<br>' +
-                    '<p><b>Search Mechanism</b></p>' +
-                    '<p>Going to trivago.com, searching Dusseldorf, Bremen, Germany and Eiffel Tower. Search history shows Las Vegas as part of the history queue. I have seen' +
-                    'that is is in all the different sites, where the capital or in this case a major turistic city is included in the search. In the beginning it looked intentional' +
-                    'but than I reached to the conclusion that the city or place is added because thats the default search text on trivago start site and by that means that this is actually a ' +
-                    'bug in the website, in my opinion.</p>';
+                    '<p>After doing a search, when you want to check the offers related to a hotel, I observed that the offers place holder has a static minimal length. This means that when there are' +
+                    'very few offers, you will have a big white space until you can see the [^] go-up or fold button. On the other hand, when there are many offers, sometimes the [^] go-up or fold button' +
+                    'covers the last result which is definitely a bug. To reproduce these fenomena: <br>(1)Trivago.bg, search Bedale, open the offers for The 3 Coopers' +
+                    '<br>(2)Trivago.hu, search Adast, open the offers for Grand de France</p>' +
+                    '<br>';
         }
     </script>
 
