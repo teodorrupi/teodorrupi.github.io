@@ -221,24 +221,26 @@
                     '<p>On the upper level of the application, what the user can see as interaction is that based on his input, characters or words are matched to the database to show' +
                     'suggestions drop-down panel. This basically ensures that the user can find what he needs else the location or the name is wrong or not in the database if it does not' +
                     'show up on the suggestions list.</br>On the lower level is what input on the search bar triggers below the interface.' +
+                    '</br><b>(1) On key down, the value of id=js_querystring_shadow changes by using js code,</b> ' +
+                    '</br><b>(2) On button id js_go, the search is initialized with the search string value,</b> ' +
+                    '</br><b>(3) Id main_content will hold the results of the search, the filters and the favorites+history panel,</b> ' +
+                    '</br><b>(4) Div with id content and subdiv with class container_itemlist itemlist_simplified will contain the block of hotel results</b> ' +
+                    '</br><b>(5) List js_itemlist will hold all the list elements that make the results.</b> ' +
+                    '</br><b>(6) On search, pricesearch.g.js is called to calculate prices for all the hotels from different sites.</b> </p>' +
+                    '<br>'+
+                    '<p><b>Filtering or opening a hotels details: </b></p>' +
+                    '<p>On filtering:' +
                     '</br><b>(1)</b> ' +
                     '</br><b>(2)</b> ' +
                     '</br><b>(3)</b> ' +
+                    '<br> On Opening Details:' +
                     '</br><b>(4)</b> ' +
                     '</br><b>(5)</b> ' +
                     '</br><b>(6)</b> </p>' +
                     '<br>'+
-                    '<p><b>Filtering or opening a hotels details: </b></p>' +
-                    '<p>JavaScript - Redundant<br>HTML - Redundant<br>JSON-LD - type="application/ld+json"<br>Schema.org HTML Markups - Data structuring and better page recognision by search providers<br>' +
-                    'PHP - A must for the server side. Also www.trivago.com/page_check.php<br>Backbone.js framework- (function(){var v=this;var C=v.Backbone ...<br>Apache - On web server<br>' +
-                    'JSON - Redundant<br>JQuery library - To ease js code writing ALSO {throw new Error("jQuery requires...<br>CSS - Redundant<br>MapCSS - CSS for maps<br>' +
-                    'Ajax - ajaxComplete and ajaxSend Events on Event Listeners<br>Require.js framework - var requirejs,require,define;<br>Node.js - Assumption/Good idea to use on such website<br></p>' +
-                    '<br>'+
                     '<p><b>Data formatting: </b></p>' +
-                    '<p>JavaScript - Redundant<br>HTML - Redundant<br>JSON-LD - type="application/ld+json"<br>Schema.org HTML Markups - Data structuring and better page recognision by search providers<br>' +
-                    'PHP - A must for the server side. Also www.trivago.com/page_check.php<br>Backbone.js framework- (function(){var v=this;var C=v.Backbone ...<br>Apache - On web server<br>' +
-                    'JSON - Redundant<br>JQuery library - To ease js code writing ALSO {throw new Error("jQuery requires...<br>CSS - Redundant<br>MapCSS - CSS for maps<br>' +
-                    'Ajax - ajaxComplete and ajaxSend Events on Event Listeners<br>Require.js framework - var requirejs,require,define;<br>Node.js - Assumption/Good idea to use on such website<br></p>' +
+                    '<p>The data is formated in the following way: <br>' +
+                    '</p>' +
                     '<br>';
         }
 
