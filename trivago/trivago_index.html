@@ -49,7 +49,7 @@
             <p id="home">Dear visitor,</p>
             <p>This simple website was built solely for the purpose of representing the trivago company assignment solutions<br>
             and will exist until it will be necessary unless taken down due to any law violations. The trivago company logo is used<br>
-            because this website will only be referenced by trivago company staff members.</p>
+            because this website will only be referenced by trivago company staff members, but is property of trivago and this website uses it without authorization.</p>
             <div id="end">
                 <p>Quality Assurance Position Applicant<br>Teodor Rupi</p>
                 <p><b>Email: </b>teodorrupi at gmail dot com
@@ -142,7 +142,7 @@
                     '<br><b>(f)</b> The website should implement filtering options such as Price range, Distance from, hotel size, in-house options [5]' +
                     '<br><b>(g)</b> The website should implement a search history panel [2]' +
                     '<br><b>(h)</b> On results, the website must provide on first glance Photos, Prices, Review Feedbacks and basic info such as "Location", "Other prices list", "distance" [5]' +
-                    '<br><b>(i)</b> The results shall continue in the next pages if page-limit is exceeded.[3]' +
+                    '<br><b>(i)</b> The website shall implement a multipage results system if page-limit is exceeded.[3]' +
                     '' +
                     '<br><br>Having in mind that trivago offers a website with the purpose of hotel search for fast booking,' +
                     '<br> I would rank (b), (c), (f) and (h) with priority <b>5</b>' +
@@ -237,7 +237,9 @@
                     '</br><b>(4)</b> This is caught by javascript code (JQuery) which changes the view by activating the drop down box with the information.</p>' +
                     '<br>'+
                     '<p><b>Data formatting: </b></p>' +
-                    '<p>The data is formated in the following way: <br>' +
+                    '<p>Javascript generates all the results and changes the innerHtml of the main_content div to add all the results in a dynamical way, ' +
+                    'most probably by using the JSON javascript object notation formatting. Using js the website generates this content which is made of < li > elements ' +
+                    'of the list with id js_itemlist<br>' +
                     '</p>' +
                     '<br>';
         }
