@@ -221,22 +221,20 @@
                     '<p>On the upper level of the application, what the user can see as interaction is that based on his input, characters or words are matched to the database to show' +
                     'suggestions drop-down panel. This basically ensures that the user can find what he needs else the location or the name is wrong or not in the database if it does not' +
                     'show up on the suggestions list.</br>On the lower level is what input on the search bar triggers below the interface.' +
-                    '</br><b>(1) On key down, the value of id=js_querystring_shadow changes by using js code,</b> ' +
-                    '</br><b>(2) On button id js_go, the search is initialized with the search string value,</b> ' +
-                    '</br><b>(3) Id main_content will hold the results of the search, the filters and the favorites+history panel,</b> ' +
-                    '</br><b>(4) Div with id content and subdiv with class container_itemlist itemlist_simplified will contain the block of hotel results</b> ' +
-                    '</br><b>(5) List js_itemlist will hold all the list elements that make the results.</b> ' +
-                    '</br><b>(6) On search, pricesearch.g.js is called to calculate prices for all the hotels from different sites.</b> </p>' +
+                    '</br><b>(1)</b> On key down, the value of id=js_querystring_shadow changes by using js code,' +
+                    '</br><b>(2)</b> On button id js_go, the search is initialized with the search string value, ' +
+                    '</br><b>(3)</b> Id main_content will hold the results of the search, the filters and the favorites+history panel,' +
+                    '</br><b>(4)</b> Div with id content and subdiv with class container_itemlist itemlist_simplified will contain the block of hotel results,' +
+                    '</br><b>(5)</b> List with id js_itemlist will hold all the list elements that make the results.' +
+                    '</br><b>(6)</b> On search, pricesearch.g.js is called to calculate prices for all the hotels from different sites.</p>' +
                     '<br>'+
                     '<p><b>Filtering or opening a hotels details: </b></p>' +
                     '<p>On filtering:' +
-                    '</br><b>(1)</b> ' +
-                    '</br><b>(2)</b> ' +
-                    '</br><b>(3)</b> ' +
-                    '<br> On Opening Details:' +
-                    '</br><b>(4)</b> ' +
-                    '</br><b>(5)</b> ' +
-                    '</br><b>(6)</b> </p>' +
+                    '</br><b>(1)</b> The filters are part of div with id js_leftcol, ' +
+                    '</br><b>(2)</b> When a filter is selected, the html is manipulated by javascript to add Checked class in the class-list except for Distance which changes the ' +
+                    'percentage. Class Checked is caught by another script to change the results shown in the page.' +
+                    '</br><b>(3)</b> When opening details of a hotel, class Active is added to the list elements of the main_content div,' +
+                    '</br><b>(4)</b> This is caught by javascript code (JQuery) which changes the view by activating the drop down box with the information.</p>' +
                     '<br>'+
                     '<p><b>Data formatting: </b></p>' +
                     '<p>The data is formated in the following way: <br>' +
