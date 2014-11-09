@@ -1,0 +1,159 @@
+html{
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+html, body {
+    font-size: 12px;
+    height: 80%;
+}
+
+body{
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+    color: #444;
+    /*overflow: hidden; */
+}
+
+h1, h2, .list, #title{
+    font-family: 'Bree Serif', Georgia, serif;
+    font-style: normal;
+    font-size: 12px;
+}
+
+#title{
+    font-size: 20px;
+}
+
+#header, #container, #nav, #nav_list, #footer, #contact, #imprint, #blocks{
+
+    clear: both;
+    max-width: 920px;
+    min-width: 920px;
+    margin: auto;
+    position: relative;
+    padding: 0;
+    border: 0;
+    text-indent: 0;
+    text-decoration: none;
+    font-style: normal;
+    vertical-align: baseline;
+    box-sizing: inherit;
+
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+}
+
+.title_view, .logo, #header_pane{
+    display:inline;
+}
+
+div {
+    display: block;
+}
+
+#header{
+    display: table;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #CCC;
+}
+
+#logo_view, #title_view, li, #header_pane, #sign_in{
+
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 20px;
+    padding-left: 20px;
+
+
+}
+
+#sign_in{
+    padding-left: 30px;
+}
+
+#logo_view{
+    border-right: 1px solid #CCC;
+}
+
+a:link{
+    color: #101010;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #cdccce;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0a0a0b;
+    text-decoration: none;
+}
+
+a:active {
+    color: #cdccce;
+    text-decoration: none;
+}
+
+a{
+    color: #cdccce;
+}
+
+#title{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bar{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: arial, sans-serif;
+}
+
+.bar-title{
+    font-family: arial, sans-serif;
+    font-size: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #CCC;
+
+}
+
+.bar-content{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+#sidebar, #blocks{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#container2{
+    min-width: 920px;
+    width: 100%;
+    display: inline-block;
+}
+
+#sidebar{
+    margin-left: 0;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+
+button {
+    background:none!important;
+    border:none;
+    padding:0!important;
+    cursor: pointer;
+}
+
+#blocks
+{
+    padding-top: 50px;
+    position: relative;
+}
