@@ -9,13 +9,21 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
     color: #ff7f2b;
-    font-family: "Source Sans Pro",sans-serif;
     font-size: 80px;
     font-weight: 200;
     letter-spacing: -5px;
     padding-bottom: 0;
     padding-left: 0;
     padding-top: 0;
+}
+
+h1{
+    font-family: 'Euphoria Script', cursive;
+}
+
+h2, h3, h4, h5, h6
+{
+    font-family: "Source Sans Pro",sans-serif;
 }
 
 .jumbotron h1 {
