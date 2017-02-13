@@ -285,7 +285,16 @@
 	    return _react2.default.createElement(
 	      'div',
 	      null,
-	      'About'
+	      _react2.default.createElement(
+	        'h1',
+	        null,
+	        'About'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'This is the content of about page in a paragraph tag. This section should be visible below the common navigation system.'
+	      )
 	    );
 	  }
 	});
