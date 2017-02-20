@@ -5,6 +5,7 @@ import About from './About'
 import Repos from './Repos'
 import Repo from './Repo'
 import Home from './Home'
+import AsyncApp from './containers/AsyncApp'
 
 module.exports = (
   <Route path="/" component={App}>
@@ -13,5 +14,6 @@ module.exports = (
       <Route path="/repos/:userName/:repoName" component={Repo}/>
     </Route>
     <Route path="/about" component={About}/>
+    <Route path="/AsyncApp" component={AsyncApp}/>
   </Route>
 )
