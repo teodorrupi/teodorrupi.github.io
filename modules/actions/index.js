@@ -5,6 +5,11 @@ export const RECEIVE_POSTS = 'RECEIVE_POSTS'
 export const SELECT_SUBREDDIT = 'SELECT_SUBREDDIT'
 export const INVALIDATE_SUBREDDIT = 'INVALIDATE_SUBREDDIT'
 
+export const REQUEST_JOBS = 'REQUEST_JOBS';
+export const RECEIVE_JOBS = 'RECEIVE_JOBS';
+
+export const ADD = 'ADD';
+
 export function selectSubreddit(subreddit) {
   return {
     type: SELECT_SUBREDDIT,
@@ -63,7 +68,51 @@ export function fetchPostsIfNeeded(subreddit) {
   }
 }
 
-let nextTodoId = 0
+function requestJobs() {
+  return {
+    type: REQUEST_JOBS,
+    test: 'test'
+  }
+}
+
+function receiveJobs(json) {
+  return {
+    type: RECEIVE_JOBS,
+    test: 'test',
+    jobs: json.jobs,
+    receivedAt: Date.now()
+  }
+}
+
+function fetchJobs() {
+  return dispatch => {
+    dispatch(requestJobs());
+    return fetch(`https://jenkins.mono-project.com/api/json`)
+        .then(response => response.json())
+        .then(json => dispatch(receiveJobs(json)))
+  }
+}
+
+function shouldFetchJobs(state) {
+  const jobs = state.jobsByJenkins['test']
+  if(!jobs) {
+    return true;
+  } else if (jobs.isFetching) {
+    return false;
+  } else {
+    return false;
+  }
+}
+
+export function fetchJobsIfNeeded(){
+  return (dispatch, getState) => {
+    if (shouldFetchJobs(getState())) {
+      return dispatch(fetchJobs())
+    }
+  }
+}
+
+let nextTodoId = 0;
 
 export const addTodo = (text) => {
   return {
@@ -71,18 +120,34 @@ export const addTodo = (text) => {
     id: nextTodoId++,
     text
   }
-}
+};
 
 export const setVisibilityFilter = (filter) => {
   return {
     type: 'SET_VISIBILITY_FILTER',
     filter
   }
-}
+};
 
 export const toggleTodo = (id) => {
   return {
     type: 'TOGGLE_TODO',
     id
+  }
+};
+
+export function add(state, text) {
+  const arr = new Array({_class:"hudson.matrix.MatrixProject", color:"blue", name:text, url:"https://jenkins.mono-project.com/job/build-package-dpkg-llvm/}"})
+    return {
+      type: ADD,
+      test: 'test',
+      jobs: [].concat(arr, state.jobsByJenkins.test.items),
+      receivedAt: Date.now()
+    }
+}
+
+export function addIfNeeded(text){
+  return (dispatch, getState) => {
+      return dispatch(add(getState(), text));
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 
-import NavLink from './NavLink'
+import NavLink from '../components/NavLink'
 
 export default React.createClass({
 

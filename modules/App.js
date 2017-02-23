@@ -1,6 +1,6 @@
 import React from 'react'
 
-import NavLink from './NavLink'
+import NavLink from './components/NavLink'
 
 export default React.createClass({
   render() {
@@ -14,6 +14,7 @@ export default React.createClass({
           <li><NavLink to="/about">About</NavLink></li>
           <li><NavLink to="/repos">Repos</NavLink></li>
           <li><NavLink to="/asyncApp">AsyncApp</NavLink></li>
+          <li><NavLink to="/jenkinsApp">JenkinsApp</NavLink></li>
         </ul>
 
         {this.props.children}

@@ -1,11 +1,12 @@
 import React from 'react'
 import { Route, IndexRoute } from 'react-router'
 import App from './App'
-import About from './About'
-import Repos from './Repos'
-import Repo from './Repo'
-import Home from './Home'
+import About from './pages/About'
+import Repos from './pages/Repos'
+import Repo from './components/Repo'
+import Home from './pages/Home'
 import AsyncApp from './containers/AsyncApp'
+import JenkinsApp from './containers/JenkinsApp'
 
 module.exports = (
   <Route path="/" component={App}>
@@ -15,5 +16,6 @@ module.exports = (
     </Route>
     <Route path="/about" component={About}/>
     <Route path="/AsyncApp" component={AsyncApp}/>
+    <Route path="/JenkinsApp" component={JenkinsApp}/>
   </Route>
 )
