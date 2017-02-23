@@ -75,7 +75,7 @@
 	  _reactRedux.Provider,
 	  { store: store },
 	  _react2.default.createElement(_reactRouter.Router, { routes: _routes2.default, history: _reactRouter.browserHistory })
-	), document.getElementById('app'));
+	), document.getElementById('app2'));
 
 /***/ },
 /* 1 */

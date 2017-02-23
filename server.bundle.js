@@ -60,9 +60,9 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var express = __webpack_require__(27);
-	var compression = __webpack_require__(28);
-	var path = __webpack_require__(29);
+	var express = __webpack_require__(28);
+	var compression = __webpack_require__(29);
+	var path = __webpack_require__(30);
 	// we'll use this to render our app to an html string
 
 	// and these to match the url to routes and then render
@@ -163,6 +163,10 @@
 
 	var _JenkinsApp2 = _interopRequireDefault(_JenkinsApp);
 
+	var _Jira = __webpack_require__(27);
+
+	var _Jira2 = _interopRequireDefault(_Jira);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	module.exports = _react2.default.createElement(
@@ -176,7 +180,8 @@
 	  ),
 	  _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _About2.default }),
 	  _react2.default.createElement(_reactRouter.Route, { path: '/AsyncApp', component: _AsyncApp2.default }),
-	  _react2.default.createElement(_reactRouter.Route, { path: '/JenkinsApp', component: _JenkinsApp2.default })
+	  _react2.default.createElement(_reactRouter.Route, { path: '/JenkinsApp', component: _JenkinsApp2.default }),
+	  _react2.default.createElement(_reactRouter.Route, { path: '/Jira', component: _Jira2.default })
 	);
 
 /***/ },
@@ -212,7 +217,7 @@
 	      ),
 	      _react2.default.createElement(
 	        'ul',
-	        { role: 'nav' },
+	        { role: 'nav', className: 'inline-menu' },
 	        _react2.default.createElement(
 	          'li',
 	          null,
@@ -256,6 +261,15 @@
 	            _NavLink2.default,
 	            { to: '/jenkinsApp' },
 	            'JenkinsApp'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          _react2.default.createElement(
+	            _NavLink2.default,
+	            { to: '/jira' },
+	            'Jira'
 	          )
 	        )
 	      ),
@@ -328,7 +342,7 @@
 	      'div',
 	      null,
 	      _react2.default.createElement(
-	        'h1',
+	        'h2',
 	        null,
 	        'About'
 	      ),
@@ -1012,7 +1026,7 @@
 	  displayName: 'Home',
 	  render: function render() {
 	    return _react2.default.createElement(
-	      'div',
+	      'h2',
 	      null,
 	      'Home'
 	    );
@@ -1236,7 +1250,7 @@
 	        'span',
 	        null,
 	        _react2.default.createElement(
-	          'h1',
+	          'h2',
 	          null,
 	          value
 	        ),
@@ -1557,7 +1571,11 @@
 	        'form',
 	        { onSubmit: function onSubmit(e) {
 	                e.preventDefault();
+	                if (!input.value.trim()) {
+	                    return;
+	                }
 	                dispatch((0, _.addIfNeeded)(input.value));
+	                input.value = '';
 	            } },
 	        _react2.default.createElement('input', { type: 'text', ref: function ref(text) {
 	                input = text;
@@ -1578,18 +1596,51 @@
 
 /***/ },
 /* 27 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = require("express");
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	    displayName: 'Jira',
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	                'h2',
+	                null,
+	                'Jira'
+	            )
+	        );
+	    }
+	}); /**
+	     * Created by teodor on 23/02/17.
+	     */
 
 /***/ },
 /* 28 */
 /***/ function(module, exports) {
 
-	module.exports = require("compression");
+	module.exports = require("express");
 
 /***/ },
 /* 29 */
+/***/ function(module, exports) {
+
+	module.exports = require("compression");
+
+/***/ },
+/* 30 */
 /***/ function(module, exports) {
 
 	module.exports = require("path");
