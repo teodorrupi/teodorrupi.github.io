@@ -10,8 +10,12 @@ let Add = ({dispatch}) => {
 
     return (
         <form onSubmit={e => {
-            e.preventDefault()
+            e.preventDefault();
+            if(!input.value.trim()){
+                return;
+            }
             dispatch(addIfNeeded(input.value))
+            input.value = ''
         }}>
             <input type="text" ref={text => {input = text;}}/>
             <button type="submit">Add</button>

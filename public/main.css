@@ -1,3 +1,20 @@
 .active {
   color: green;
 }
+
+/* Align menu horizontally */
+ul.inline-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul.inline-menu li {
+    float: left;
+}
+
+ul.inline-menu li a {
+    padding-right: 8px;
+}
+/* End */

@@ -7,6 +7,7 @@ import Repo from './components/Repo'
 import Home from './pages/Home'
 import AsyncApp from './containers/AsyncApp'
 import JenkinsApp from './containers/JenkinsApp'
+import Jira from "./pages/Jira";
 
 module.exports = (
   <Route path="/" component={App}>
@@ -17,5 +18,6 @@ module.exports = (
     <Route path="/about" component={About}/>
     <Route path="/AsyncApp" component={AsyncApp}/>
     <Route path="/JenkinsApp" component={JenkinsApp}/>
+      <Route path="/Jira" component={Jira}/>
   </Route>
 )
