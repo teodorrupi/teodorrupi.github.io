@@ -22,6 +22,7 @@ class JenkinsApp extends Component {
         const { jobs, isFetching, lastUpdated } = this.props;
         return (
             <div>
+                <h2>Jenkins App</h2>
                 <Add/>
                 <p>
                     {lastUpdated &&
