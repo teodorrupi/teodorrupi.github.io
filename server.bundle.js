@@ -1411,6 +1411,11 @@
 	            return _react2.default.createElement(
 	                'div',
 	                null,
+	                _react2.default.createElement(
+	                    'h2',
+	                    null,
+	                    'Jenkins App'
+	                ),
 	                _react2.default.createElement(_Add2.default, null),
 	                _react2.default.createElement(
 	                    'p',
